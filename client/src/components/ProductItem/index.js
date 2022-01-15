@@ -9,6 +9,7 @@ function ProductItem(item) {
   const state = useSelector((state) => {
     return state
   });
+  const { image, name, _id, price, quantity } = item;
   const dispatch = useDispatch();
 
   const { cart } = state;
